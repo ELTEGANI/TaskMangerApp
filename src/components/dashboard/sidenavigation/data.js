@@ -6,28 +6,24 @@ const data = [
     icon: <AdminIcon />,
     content: [
       {
-        title: 'Add New Users',
-        link: '',
+        title: 'Add New User',
+        link: '/admin/addNewUser',
       },
       {
         title: 'Create New USers Group',
-        link: '',
+        link: '/admin/assignUsers',
       },
       {
         title: 'Create Task',
-        link: '',
+        link: '/admin/createNewGroup',
       },
       {
-        title: 'Assign User To Group',
-        link: '',
-      },
-      {
-        title: 'Assign Task To Group',
-        link: '',
+        title: 'Assign Users',
+        link: '/admin/viewLists',
       },
       {
         title: 'View List Of All User & List Of Group',
-        link: '',
+        link: '/admin/',
       }
     ],
   },
