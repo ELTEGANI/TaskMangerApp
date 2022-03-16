@@ -30,25 +30,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/admin.js"
     ],
-    "/admin/assignUsers": [
+    "/user": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/admin/assignUsers.js"
-    ],
-    "/admin/createNewGroup": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/admin/createNewGroup.js"
-    ],
-    "/admin/createNewTask": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/admin/createNewTask.js"
-    ],
-    "/admin/viewLists": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/admin/viewLists.js"
+      "static/chunks/pages/user.js"
     ]
   },
   "ampFirstPages": []

@@ -16,7 +16,7 @@ const style = {
 
 export default function SideNavigation({ mobilePosition }) {
   const { open, ref } = useToggle();
-  const userType = "Admin";
+  const userType = "User";
   return (
     <aside
       ref={ref}
@@ -24,7 +24,7 @@ export default function SideNavigation({ mobilePosition }) {
        ${open ? style.open : style.close} ${css.scrollbar}`}
     >
       <div className={style.container}>
-        {userType == "Admin"? <SidenavItems /> :<SidenavUserItems />}
+        {userType == "User"? <SidenavUserItems /> :<SidenavUserItems />}
       </div>
     </aside>
   );
