@@ -1,12 +1,12 @@
 import DashboardLayout from '../../components/dashboard/layout';
 import 'tailwindcss/tailwind.css';
 
-function AdminPage(){
+function AddNewUser(){
     return (
       <DashboardLayout>
-          <h1>AdminPage</h1>
+          <h1>New User</h1>
       </DashboardLayout>
     )
-  }
-  
-  export default AdminPage;
+    }
+    
+    export default AddNewUser;

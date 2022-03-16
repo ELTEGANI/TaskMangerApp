@@ -29,8 +29,7 @@ export default function SidenavItems() {
                     <span
                       className={
                         item.link === asPath ? style.active : style.inactive
-                      }
-                    >
+                      }>
                       {item.title}
                     </span>
                   </a>

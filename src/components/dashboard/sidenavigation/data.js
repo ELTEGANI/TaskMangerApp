@@ -7,23 +7,23 @@ const data = [
     content: [
       {
         title: 'Add New User',
-        link: '/admin/addNewUser',
+        link: '/admin',
       },
       {
-        title: 'Create New USers Group',
-        link: '/admin/assignUsers',
-      },
-      {
-        title: 'Create Task',
+        title: 'Create New Users Group',
         link: '/admin/createNewGroup',
       },
       {
+        title: 'Create Task',
+        link: '/admin/createNewTask',
+      },
+      {
         title: 'Assign Users',
-        link: '/admin/viewLists',
+        link: '/admin/assignUsers',
       },
       {
         title: 'View List Of All User & List Of Group',
-        link: '/admin/',
+        link: '/admin/viewLists',
       }
     ],
   },

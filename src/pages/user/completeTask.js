@@ -1,12 +1,12 @@
 import DashboardLayout from '../../components/dashboard/layout';
 import 'tailwindcss/tailwind.css';
 
-function AddNewUser(){
+function CompleteTask(){
     return (
       <DashboardLayout>
-          <h1>New User</h1>
+          <h1>User CompleteTask</h1>
       </DashboardLayout>
     )
     }
     
-    export default AddNewUser;
+    export default CompleteTask;

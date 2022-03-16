@@ -1,5 +1,5 @@
 import SidenavItems from './items';
-import SidenavHeader from './header';
+import SidenavUserItems from './userItem';
 import css from './index.module.css';
 import { useToggle } from '../provider/context';
 
@@ -16,6 +16,7 @@ const style = {
 
 export default function SideNavigation({ mobilePosition }) {
   const { open, ref } = useToggle();
+  const userType = "Admin";
   return (
     <aside
       ref={ref}
@@ -23,8 +24,7 @@ export default function SideNavigation({ mobilePosition }) {
        ${open ? style.open : style.close} ${css.scrollbar}`}
     >
       <div className={style.container}>
-        <SidenavHeader />
-        <SidenavItems />
+        {userType == "Admin"? <SidenavItems /> :<SidenavUserItems />}
       </div>
     </aside>
   );

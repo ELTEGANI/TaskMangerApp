@@ -30,11 +30,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/admin.js"
     ],
-    "/admin/addNewUser": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/admin/addNewUser.js"
-    ],
     "/admin/assignUsers": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -44,6 +39,11 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/admin/createNewGroup.js"
+    ],
+    "/admin/createNewTask": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/admin/createNewTask.js"
     ],
     "/admin/viewLists": [
       "static/chunks/webpack.js",
