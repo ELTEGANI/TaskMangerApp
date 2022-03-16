@@ -2,27 +2,45 @@ import AdminIcon from './icons/admin';
 
 const userData = [
   {
-    section: 'User',
+    section: 'View Task',
     icon: <AdminIcon />,
     content: [
       {
         title: 'View User Task',
         link: '/user',
-      },
-      {
-        title: 'Get Task From Users Group',
-        link: '/user/getTask',
-      },
-      {
-        title: 'Complete New Task',
-        link: '/user/completeTask',
-      },
-      {
-        title: 'Sort Task',
-        link: '/user/sortTask',
       }
     ],
   },
+  {
+    section: 'Get Task',
+    icon: <AdminIcon />,
+    content: [
+      {
+        title: 'Get Task From Users Group',
+        link: '/user/getTask',
+      }
+    ],
+  },
+  {
+    section: 'Complete Task',
+    icon: <AdminIcon />,
+    content: [
+      {
+        title: 'Complete New Task',
+        link: '/user/completeTask',
+      }
+    ],
+  },
+  {
+    section: 'Sort Task',
+    icon: <AdminIcon />,
+    content: [
+      {
+        title: 'Sort My Tasks',
+        link: '/user/sortTask',
+      }
+    ],
+  }
 ];
 
 export default userData;
