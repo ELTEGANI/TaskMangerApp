@@ -1,4 +1,6 @@
 import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
+import Link from 'next/link'
+
 
 function LoginPage(){
   return (
@@ -24,7 +26,9 @@ function LoginPage(){
         </Segment>
       </Form>
       <Message>
-        You are Admin? <a href='#'>Login From Here</a>
+      <Link href="/admin/login">
+          <a>Admin Login</a>
+        </Link>
       </Message>
     </Grid.Column>
   </Grid>
