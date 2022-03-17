@@ -2,6 +2,7 @@ import SidenavItems from './items';
 import SidenavUserItems from './userItem';
 import css from './index.module.css';
 import { useToggle } from '../provider/context';
+import SidenavHeader from '../sidenavigation/header';
 
 const style = {
   mobilePosition: {
@@ -24,6 +25,7 @@ export default function SideNavigation({ mobilePosition }) {
        ${open ? style.open : style.close} ${css.scrollbar}`}
     >
       <div className={style.container}>
+      <SidenavHeader />
         {userType == "User"? <SidenavUserItems /> :<SidenavUserItems />}
       </div>
     </aside>
