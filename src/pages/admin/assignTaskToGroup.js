@@ -1,6 +1,6 @@
 import DashboardLayout from '../../components/dashboard/layout';
 import 'tailwindcss/tailwind.css';
-import { List,Header,Button,Icon} from 'semantic-ui-react'
+import { List,Header,Button} from 'semantic-ui-react'
 
 
 function AssignUser(){
