@@ -12,26 +12,6 @@ const userData = [
     ],
   },
   {
-    section: 'Get Task',
-    icon: <AdminIcon />,
-    content: [
-      {
-        title: 'Get Task From Users Group',
-        link: '/user/getTask',
-      }
-    ],
-  },
-  {
-    section: 'Complete Task',
-    icon: <AdminIcon />,
-    content: [
-      {
-        title: 'Complete New Task',
-        link: '/user/completeTask',
-      }
-    ],
-  },
-  {
     section: 'Sort Task',
     icon: <AdminIcon />,
     content: [

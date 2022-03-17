@@ -30,11 +30,6 @@
       "static/chunks/main.js",
       "static/chunks/pages/user.js"
     ],
-    "/user/getTask": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/user/getTask.js"
-    ],
     "/user/sortTask": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
