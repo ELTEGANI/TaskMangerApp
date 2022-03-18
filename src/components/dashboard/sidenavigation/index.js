@@ -1,8 +1,8 @@
 import SidenavItems from './items';
 import SidenavUserItems from './userItem';
+import SidenavHeader from './header';
 import css from './index.module.css';
 import { useToggle } from '../provider/context';
-import SidenavHeader from '../sidenavigation/header';
 
 const style = {
   mobilePosition: {
@@ -17,7 +17,8 @@ const style = {
 
 export default function SideNavigation({ mobilePosition }) {
   const { open, ref } = useToggle();
-  const userType = "User";
+
+    
   return (
     <aside
       ref={ref}
@@ -25,8 +26,8 @@ export default function SideNavigation({ mobilePosition }) {
        ${open ? style.open : style.close} ${css.scrollbar}`}
     >
       <div className={style.container}>
-      <SidenavHeader />
-        {userType == "User"? <SidenavUserItems /> :<SidenavUserItems />}
+        <SidenavHeader/>
+        {typeof window !== 'undefined' && localStorage.getItem("userType") == "User"? <SidenavUserItems /> :<SidenavItems />}
       </div>
     </aside>
   );

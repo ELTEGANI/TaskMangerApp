@@ -1,6 +1,18 @@
-import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
+import { Button, Form, Grid, Header, Segment } from 'semantic-ui-react'
+import {useRouter} from 'next/router';
+
 
 function AdminLoginPage(){
+
+  const router = useRouter()
+
+  function navigateToDashBoard(){
+    router.push('/admin')
+    if(typeof window !== 'undefined'){
+      return window.localStorage.setItem("userType","Admin")
+ }
+}
+
   return (
     <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
     <Grid.Column style={{ maxWidth: 450 }}>
@@ -18,7 +30,7 @@ function AdminLoginPage(){
             type='password'
           />
 
-          <Button color='red' fluid size='large'>
+          <Button color='red' fluid size='large' onClick={navigateToDashBoard}>
             Login
           </Button>
         </Segment>

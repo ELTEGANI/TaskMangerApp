@@ -1,8 +1,17 @@
-import { Button, Form, Grid, Header, Image, Message, Segment } from 'semantic-ui-react'
+import { Button, Form, Grid, Header, Message, Segment } from 'semantic-ui-react'
 import Link from 'next/link'
-
+import {useRouter} from 'next/router';
 
 function LoginPage(){
+
+  const router = useRouter()
+
+  function navigateToDashBoard(){
+    router.push('/user')
+    if(typeof window !== 'undefined'){
+      return window.localStorage.setItem("userType","User")
+ }
+  }
   return (
     <Grid textAlign='center' style={{ height: '100vh' }} verticalAlign='middle'>
     <Grid.Column style={{ maxWidth: 450 }}>
@@ -20,7 +29,7 @@ function LoginPage(){
             type='password'
           />
 
-          <Button color='teal' fluid size='large'>
+          <Button color='teal' fluid size='large' onClick={navigateToDashBoard}>
             Login
           </Button>
         </Segment>
