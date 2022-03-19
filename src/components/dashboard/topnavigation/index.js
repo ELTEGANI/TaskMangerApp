@@ -19,7 +19,7 @@ export default function TopNavigation() {
           <div className="flex group h-full items-center relative w-12">
           </div>
           <div className="flex items-center justify-end ml-5 mr-0 p-1 relative text-gray-700 w-full sm:mr-0 sm:right-auto">
-            <Icon size ='big' name='sign-out' onClick={signOut} className="block relative">
+            <Icon size ='big' name='sign out alternate' onClick={signOut} className="block relative">
               
             </Icon>
           </div>

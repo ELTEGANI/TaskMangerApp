@@ -195,8 +195,6 @@ function ViewUserTask(){
   <Header as='h2' icon textAlign='center'>
             <Header.Content>Get Task From User Group</Header.Content>
           </Header>
-
-
           <Form>
          <Form.Field>
              <label>Group Name</label>
