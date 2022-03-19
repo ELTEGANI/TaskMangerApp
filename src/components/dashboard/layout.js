@@ -21,7 +21,7 @@ export default function DashboardLayout({ children }) {
           <SideNavigation mobilePosition="right" />
           <div className={style.mainContainer}>
             <TopNavigation />
-            <main className={style.main}>{children}</main>
+            <main className={style.main}>{children}</main> 
           </div>
         </div>
       </div>
